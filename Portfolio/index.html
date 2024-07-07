@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<!--Head-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>Mehmet Sakar</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" type="img/jpg" href="images/coding_icon.png">
+</head>
+
+<!--Body-->
+
+<body class="Background">
+
+    <!--Navbar-->
+    <div class="Navbar">
+        <a class="active" href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#GitHub">GitHub</a>
+        <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
+
+    </div>
+
+    <!--Breaks inserted to add space between navbar and the first heading-->
+    <br>
+    <br>
+
+    <!--Background video-->
+    <div id="Home">
+        <video autoplay muted loop id="Typing_Video">
+            <source src="media/1326864-hd_1920_1080_25fps.mp4" type="video/mp4">
+            <!--Display message if video fails to run-->
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+
+    <!--Video text-->
+    <div class="Video_Text">
+        <h1 class="white-text">WELCOME TO MY CODE-MADE UNIVERSE</h1>
+        <strong>
+            <p class="center">
+                <q>
+                    Hello! In this ever-evolving world of technology, I create digital realms through the magic of code.
+                    Each line of code contains the rules and instructions that shape the behavior of computers. In this
+                    process, I take on the role of a digital architect or creator, building virtual worlds.
+                    <br>
+                    <br>I am Mehmet Sakar, and I craft worlds made of logic and syntax in this digital adventure. From
+                    the
+                    beginning of my coding journey to mastering various languages and frameworks, I have relished the
+                    experience of learning and creating. I am thrilled to share this journey with you.
+                    <br>
+                    <br>Thank you for joining me on this digital voyage. Sit back, explore, and get lost in a universe
+                    woven with the threads of code. An exciting adventure awaits you!
+                </q>
+
+                <br>
+                <br>
+                <br>
+            </p>
+        </strong>
+    </div>
+
+
+
+
+    
+    <!-- Slideshow section added -->
+    <div id="Slideshow">
+        <div id="Slideshow_Background">
+            <div id="Slideshow_Container">
+                <!-- Slide 1 of 6 -->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="Image/C_Sharp_and_Dot_NET.png" alt="Picture of yourself">
+                    <div class="text">I'm available to assist you on your project!</div>
+                </div>
+                <!-- Slide 2 of 6 -->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="Image/HTML_CSS_and_JavaScript.jpeg"
+                        alt="HTML, CSS, and JS logos">
+                    <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,
+                    </div>
+                </div>
+                <!-- Slide 3 of 6 -->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="Image/Python.png" alt="Python logo">
+                    <div class="text">the popular programming language Python,</div>
+                </div>
+                <!-- Slide 4 of 6 -->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="Image/SQL_and_Database.jpg" alt="C# logo">
+                    <div class="text">C#, .NET Framework, ASP.NET, MVC, </div>
+                </div>
+                <!-- Slide 5 of 6 -->
+
+                <!-- Previous and next buttons -->
+                <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br> <!-- Adds a space between the slideshow images and the dots -->
+
+            <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+            <div style="text-align: center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!--About section-->
+    <div class="Row" id="About">
+        <!--Left column-->
+        <div class="Column_2">
+            <img src="image/development.jpg" alt="Replace with your own image and description">
+        </div>
+        <!--Right column-->
+        <div class="Column_1">
+            <h1>About</h1>
+            <p>
+                Hey there! I'm a coding enthusiast with a knack for software development!<br>
+                <br>I've successfully completed <a href="https://www.learncodinganywhere.com" target="_blank">The Tech
+                    Academy</a>’s Software Developer Boot Camp, where I honed my skills and gained practical experience
+                in a variety of web and programming languages, such as HTML, CSS, JavaScript, and more.
+                <br>
+                <br>As a versatile full-stack developer, I'm thrilled about the chance to collaborate with you on your
+                project. Feel free to reach out using the <a href="#Contact">Contact</a> information provided
+                below—I'm looking forward to connecting with you!
+            </p>
+        </div>
+    </div>
+
+
+    <!--GitHub section-->
+    <div class="Row" id="GitHub">
+        <!--Left column-->
+        <div class="Column_1">
+            <br>
+            <br>
+            <br>
+            <h1>GitHub</h1>
+            <p>
+
+                <br>
+                Dive into my coding journey by visiting my GitHub profile:
+                <br>
+            <p class="center"><a href="https://github.com/mehmet-sakar" target="_blank">Mehmet Sakar GitHub </a>
+            </p>
+            </p>
+        </div>
+        <!--Right column-->
+        <div class="Column_2">
+            <a href="https://github.com/mehmet-sakar" target="_blank"><img src="image/github.png"
+                    alt="GitHub Logo"></a>
+        </div>
+    </div>
+
+    <!--Contact section-->
+    <div id="Contact">
+        <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+        <div class="form-popup" id="myForm">
+            <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container">
+                <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
+                <h1>Contact</h1>
+                <label for="name"><b>Name</b></label>
+                <input type="text" placeholder="Type your name here" name="name" required>
+                <label for="phone"><b>Phone</b></label>
+                <input type="text" placeholder="Type your phone number here" name="phone">
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Type your email address here" name="email" required>
+                <label for="message"><b>Message</b></label>
+                <input type="text" placeholder="Type your message here" name="message">
+
+                <button type="submit" class="btn">SUBMIT</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+            </form>
+        </div>
+    </div>
+
+    <!--Footer section-->
+    <footer>
+        <p>
+        <p class="center">&copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/"
+                target="_blank">The Tech Academy</a></p>
+        <br>
+        </p>
+    </footer>
+    <script src="sample_portfolio.js"></script>
+
+</body>
+
+</html>
